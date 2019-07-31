@@ -134,8 +134,11 @@ public class ChooseAreaFragment extends Fragment {
      * 查询全国所有的省，优先从数据库查询，如果没有查询到再去服务器上查询
      */
     private void queryProvinces() {
+        //设置标题为中国
         titleText.setText("中国");
+        //设置返回按钮隐藏
         backButton.setVisibility(View.GONE);
+        //查询
         provinceList = DataSupport.findAll(Province.class);
         if (provinceList.size() > 0) {
             dataList.clear();
