@@ -32,7 +32,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     //litepal用于处理数据库
     compile 'org.litepal.android:core:1.4.1'
-    //okhttp用于处理网络
+    //okhttp用于处与服务器的交互
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     //gson
     compile 'com.google.code.gson:gson:2.7'
